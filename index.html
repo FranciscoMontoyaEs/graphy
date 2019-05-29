@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./files/icons/piechart.png" type="image/x-icon">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/secondaryIndex.css">
+    <link rel="stylesheet" href="./styles/x.css">
+    
+    <title>Graphy</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="main-nav pink darken-4">
+            <div class="nav-wrapper">
+                <a class="brand-logo" style="padding-left: 5px;">Graphy</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a onclick="M.toast({html: 'Somos un equipo de la Fes Acatlán, que realizó este proyecto como un tabajo final para la asignatura de desarrollo web.', classes: 'rounded'})">
+                            Nosotros
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="content">
+            <div class="carousel carousel-slider center">
+
+                <div class="carousel-item white-text">
+                    <video class="video-1" src="./files/videos/peopleWalking.mp4" autoplay="autoplay" loop="loop"></video>
+                    <div class="color-item1"></div>
+                    <div class="content-wrapper1">
+                        <h2 class="white-text">Población de México.</h2>
+                        <p class="white-text">Un vistazo a la población de México de los años 2010 y 2015.</p>
+                    </div>
+                    <div class="carousel-fixed-item center">
+                        <a href="./highcharts.html" class="btn pink darken-4 waves-effect white-text white-text-2">Gráfica y Mapa</a>
+                        <a href="./chartsVal.html" class="btn pink darken-4 waves-effect white-text white-text-2">Gráficas</a>
+                        <a href="./chartsOsc.html" class="btn pink darken-4 waves-effect white-text white-text-2">Comparación y Superficie</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item white-text">
+                    <video class="video-2" src="./files/videos/coding.mp4" autoplay loop></video>
+                    <div class="color-item1"></div>
+                    <div class="content-wrapper2">
+                        <h2 class="white-text">D3Js.</h2>
+                        <p class="white-text">Un vistazo a la graficación en JavaScript con la manejadora de datos D3Js.</p>
+                    </div>
+                    <div class="carousel-fixed-item center">
+                        <a href="./d3Map.html" class="btn pink darken-4 waves-effect white-text white-text-2">Ver Mapa</a>
+                        <a href="./d3Chart.html" class="btn pink darken-4 waves-effect white-text white-text-2">Ver Gráfica</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <footer class="main-footer page-footer pink darken-3" style="padding:0;">
+            <div class="container">
+                <div class="row" style="margin: 0;">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Graphy</h5>
+                    <p class="grey-text text-lighten-4">Graphy es un proyecto de graficación que usa diferentes tecnologías
+                        JavaScript, tales como: D3Js y HighCharts
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="footer-copyright" style="padding-bottom: 0;">
+              <div class="container">
+              © 2019 All rights reserved.
+              </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            M.toast({html:'Si el vídeo no se reproduce, recarga la pagina con F5, por favor.'})
+        })
+    </script>
+</body>
+</html>
